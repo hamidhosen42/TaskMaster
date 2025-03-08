@@ -31,7 +31,7 @@
 		CEC0AC2B2D7C17DB009231AF /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		CEC0AC2C2D7C17F1009231AF /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		CEC0AC2D2D7C1818009231AF /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
-		CEC0AC2E2D7C182C009231AF /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		CEC0AC2E2D7C182C009231AF /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		CEC0AC2F2D7C1972009231AF /* TaskView_Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView_Preview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC0AC2F2D7C1972009231AF /* TaskView_Preview.swift */,
-				CEC0AC2E2D7C182C009231AF /* UITableViewCell.swift */,
+				CEC0AC2E2D7C182C009231AF /* TaskTableViewCell.swift */,
 				CEC0AC2D2D7C1818009231AF /* TaskViewController.swift */,
 			);
 			path = View;
