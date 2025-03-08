@@ -27,38 +27,13 @@
 		CEC0ABF32D7C16CB009231AF /* TaskMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0AC092D7C16CD009231AF /* TaskMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0AC132D7C16CD009231AF /* TaskMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC0AC2A2D7C1798009231AF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		CEC0AC2B2D7C17DB009231AF /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		CEC0AC2C2D7C17F1009231AF /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		CEC0AC2D2D7C1818009231AF /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		CEC0AC2E2D7C182C009231AF /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		CEC0AC2F2D7C1972009231AF /* TaskView_Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView_Preview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CEC0AC1B2D7C16CD009231AF /* Exceptions for "TaskMaster" folder in "TaskMaster" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = CEC0ABF22D7C16CB009231AF /* TaskMaster */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CEC0ABF52D7C16CB009231AF /* TaskMaster */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				CEC0AC1B2D7C16CD009231AF /* Exceptions for "TaskMaster" folder in "TaskMaster" target */,
-			);
-			path = TaskMaster;
-			sourceTree = "<group>";
-		};
-		CEC0AC0C2D7C16CD009231AF /* TaskMasterTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TaskMasterTests;
-			sourceTree = "<group>";
-		};
-		CEC0AC162D7C16CD009231AF /* TaskMasterUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TaskMasterUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEC0ABF02D7C16CB009231AF /* Frameworks */ = {
@@ -88,9 +63,9 @@
 		CEC0ABEA2D7C16CB009231AF = {
 			isa = PBXGroup;
 			children = (
-				CEC0ABF52D7C16CB009231AF /* TaskMaster */,
-				CEC0AC0C2D7C16CD009231AF /* TaskMasterTests */,
-				CEC0AC162D7C16CD009231AF /* TaskMasterUITests */,
+				CEC0AC292D7C1747009231AF /* View */,
+				CEC0AC282D7C173B009231AF /* ViewModel */,
+				CEC0AC272D7C1731009231AF /* Model */,
 				CEC0ABF42D7C16CB009231AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +78,33 @@
 				CEC0AC132D7C16CD009231AF /* TaskMasterUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC0AC272D7C1731009231AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0AC2B2D7C17DB009231AF /* LocalStorage.swift */,
+				CEC0AC2A2D7C1798009231AF /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEC0AC282D7C173B009231AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0AC2C2D7C17F1009231AF /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEC0AC292D7C1747009231AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0AC2F2D7C1972009231AF /* TaskView_Preview.swift */,
+				CEC0AC2E2D7C182C009231AF /* UITableViewCell.swift */,
+				CEC0AC2D2D7C1818009231AF /* TaskViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,9 +121,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CEC0ABF52D7C16CB009231AF /* TaskMaster */,
 			);
 			name = TaskMaster;
 			packageProductDependencies = (
@@ -143,9 +142,6 @@
 			dependencies = (
 				CEC0AC0B2D7C16CD009231AF /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				CEC0AC0C2D7C16CD009231AF /* TaskMasterTests */,
-			);
 			name = TaskMasterTests;
 			packageProductDependencies = (
 			);
@@ -165,9 +161,6 @@
 			);
 			dependencies = (
 				CEC0AC152D7C16CD009231AF /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CEC0AC162D7C16CD009231AF /* TaskMasterUITests */,
 			);
 			name = TaskMasterUITests;
 			packageProductDependencies = (
